@@ -7,16 +7,17 @@ public class Bmi {
 
 
             System.out.println("身長(m)を入力");
-            double height = sc.nextDouble() / 100;
+            double height = sc.nextDouble();
 
             System.out.println("体重(kg)を入力");
             double weight = sc.nextDouble();
 
             double BMI = calcBMI(weight, height);
-            System.out.printf("BMI: %.2f", BMI);
+            System.out.printf("BMI: %.2f\n", BMI);
 
             evalbmi(BMI);
         }
+        sc.close();
     }
 
     public static double calcBMI(double weight, double height) {
